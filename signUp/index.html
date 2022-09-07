@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>		
+	
+		<div class="container">
+
+			<div class="user signinView">
+				
+
+				<div class="form">
+					<form>
+						<h2>Sign in</h2>
+						<input type="text" placeholder="User-name">
+						<input type="password" placeholder="Password">
+						<input type="submit" value="Login">
+						<p class="signup">don't have an account
+							<a href="#" onclick="toggleForm();">Sign Up</a>
+						</p>
+					</form>
+				</div>
+
+				<div class="imgsign">
+					<img src="img/pexels-gianluca-grisenti-4215113.jpg" alt="image sign in">
+				</div>
+
+			</div>
+
+
+
+			<div class="user signupBx">
+				<div class="imgsign">
+					<img src="img/pexels-gianluca-grisenti-4215113.jpg" alt="image sign up">
+				</div>
+
+				<div class="form">
+					<form>
+						<h2>Create an account</h2>
+						<input type="text" placeholder="User-name">
+						<input type="text" placeholder="Email Address">
+						<input type="password" placeholder="Create Password">
+						<input type="password" placeholder="ConfirmPassword">
+						<input type="submit" value="Sign Up">
+						<p class="signup">Already have an account?
+							<a href="#" onclick="toggleForm();">Sign in</a>
+						</p>
+					</form>
+				</div>
+				
+			</div>
+
+		</div>
+
+	</section>
+
+	<script type="text/javascript">
+		function toggleForm() {
+			section = document.querySelector('section');
+			container = document.querySelector('.container');
+			container.classList.toggle('active');
+			section.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>

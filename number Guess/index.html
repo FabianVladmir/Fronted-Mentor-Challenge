@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NUMBER GUESS</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="site.css">
+	<link rel="stylesheet" type="text/css" href="number-guess.css">
+</head>
+<body>
+	
+	<div>
+		<div>
+			
+			<h1>Number Guess</h1>
+
+		</div>
+
+		<div>
+			Guess an integer from 1 to 10 
+			<input type="text" id="number-guessed" maxlength="2">
+			<button id="test-number">Test your guess</button>
+
+			<p id="result" class="hidden"> 
+				<strong>
+					<span id="match-msj" class="hidden">Congratulations!</span> 
+
+					<span id="no-match-msj"  class="hidden">Sorry!</span> 
+						The number to guess was <span id="number-to-guess"></span>
+				</strong>
+			</p>
+
+
+		</div>
+	</div>
+
+	<script src="number-guess.js"></script>
+
+</body>
+</html>
